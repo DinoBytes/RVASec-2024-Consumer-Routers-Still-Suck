@@ -33,6 +33,7 @@ Tracking Mass Vulnerabilities in IoT (Cheryl Biswas, TD Bank, April 2023)
 
 Cloudy with a Chance of Hacking All the Wireless Things (Vangelis Stykas, PenTestPartners, September 2020)
 - [https://www.pentestpartners.com/security-blog/cloudy-with-a-chance-of-hacking-all-the-wireless-things/](https://www.pentestpartners.com/security-blog/cloudy-with-a-chance-of-hacking-all-the-wireless-things/)
+- https://stykas.com/gwn-cloud/
 <br>
 
 Exploring the Hidden Attack Surface of OEM IoT Devices (FaradaySec, August 2022)
@@ -85,6 +86,12 @@ Your Not so "Home" Office - Soho Hacking at Pwn2Own (Alex Plaskett, MacCaulay Hu
 
 Hacking Millions of Modems (Sam Curry, June 2024)
 - [https://samcurry.net/hacking-millions-of-modems](https://samcurry.net/hacking-millions-of-modems)
+<br>
+
+Government Stuffs
+- https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
+- https://www.ntia.gov/page/software-bill-materials
+- https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-216.pdf
 <br>
 
 ### Blogs / Whitepapers
