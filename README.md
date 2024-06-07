@@ -1,7 +1,7 @@
 # RVASec 2024 - Consumer Routers Still Suck
 
 ## Slides
-link
+[Consumer Routers Still Suck](https://github.com/DinoBytes/RVASec-2024-Consumer-Routers-Still-Suck/blob/main/Consumer%20Routers%20Still%20Suck%20(RVASec).pdf)
 
 ## References
 
